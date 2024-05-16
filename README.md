@@ -16,7 +16,7 @@ repository.
 ## Files not up-to-date and know a little Python?
 
   1. Download The current `Automated_Speed_Enforcement_Camera_Locations.csv` from 
-    https://open.ottawa.ca/datasets/ottawa::automated-speed-enforcement-camera-locations/explore
+    [https://open.ottawa.ca/datasets/ottawa::automated-speed-enforcement-camera-locations/explore](https://open.ottawa.ca/datasets/ottawa::automated-speed-enforcement-camera-locations/explore)
   2. Clone this repo and cd into the repo directory.
   3. Install the `pyov2` package.
   4. Run `python speedcams.py` to generate an updated `Speed_Cameras.ov2` file   
