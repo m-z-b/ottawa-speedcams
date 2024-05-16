@@ -9,7 +9,7 @@ How to use it:
   2. Copy the `Speed_Cameras.ov2` and `Speed_Cameras.bmp` files to the map 
      directory (e.g. `USA_Canada`) on your TomTom
   3. Disconnect your TomTom device and allow it to reboot.
-  4. Under the *Manage POIs* option select *Warn when near POI". 
+  4. Under the *Manage POIs* option select *Warn when near POI*. 
   5. Choose how near you have to approach the Camera
      to get a warning, and what the appropriate warning should be.
 
