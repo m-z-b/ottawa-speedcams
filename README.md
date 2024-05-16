@@ -1,9 +1,9 @@
 # Speed Cameras of Ottawa
 
-This Python script generates an ov2 file which can be used on a TomTom to
-warn if a Speed Camera is nearby. 
+Got a TomTom and want to be warned about Ottawa Speed Cameras?
 
-How to use it:
+Grab the `Speed_Cameras.ov2` and `Speed_Cameras.bmp` files from this 
+repository.
 
   1. Connect your TomTom device to your computer
   2. Copy the `Speed_Cameras.ov2` and `Speed_Cameras.bmp` files to the map 
@@ -13,12 +13,15 @@ How to use it:
   5. Choose how near you have to approach the Camera
      to get a warning, and what the appropriate warning should be.
 
-## Updating
+## Files not up-to-date and know a little Python?
 
-The current `Automated_Speed_Enforcement_Camera_Locations.csv` file can be downloaded at:
-https://open.ottawa.ca/datasets/ottawa::automated-speed-enforcement-camera-locations/explore
-
-Run `python speedcams.py` to generate an updated `Speed_Cameras.ov2` file   and issue a pull request for the update.
+  1. Download The current `Automated_Speed_Enforcement_Camera_Locations.csv` from 
+    https://open.ottawa.ca/datasets/ottawa::automated-speed-enforcement-camera-locations/explore
+  2. Clone this repo and cd into the repo directory.
+  3. Install the `pyov2` package.
+  4. Run `python speedcams.py` to generate an updated `Speed_Cameras.ov2` file   
+  5. If you know what you're doing, Issue a pull request 
+  6. If you're not quit sure, create an issue requesting an update.
 
 ## Last Speed Camera Update
 2024-05-16
