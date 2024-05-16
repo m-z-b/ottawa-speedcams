@@ -21,7 +21,16 @@ repository.
   3. Install the `pyov2` package.
   4. Run `python speedcams.py` to generate an updated `Speed_Cameras.ov2` file   
   5. If you know what you're doing, Issue a pull request 
-  6. If you're not quit sure, create an issue requesting an update.
+  6. If you're not quite sure, create an issue requesting an update.
+
+## If you have graphic design abilities...
+
+The `Speed_Cameras.bmp` file is currently a pretty awful 16x16 bitmap. 
+
+It's displayed above a position marker on a TomTom. Something which looks
+a bit like a red camera would be much better.  
+
+Don't use any clever bitmap formats - they won't work on all devices.
 
 ## Last Speed Camera Update
 2024-05-16
