@@ -8,8 +8,9 @@
 #
 # Mike Bell, Albion Research Ltd., 2024
 #
-# NO WARRANTIES - USE ENTIRELY AT OWN RISK
+# NO WARRANTIES - USE ENTIRELY AT OWN RISK. See LICENSE.txt.
 #
+# Note that the City of Ottawa may not update the data this relies upon in a timely manner.
 
 
 
