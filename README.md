@@ -41,7 +41,7 @@ Don't use any clever bitmap formats - they won't work on all devices.
 This software is released under the MIT license - see `LICENSE.txt`
 
 ## Last Speed Camera Update
-2024-05-16
+2025-01-14
 
 ## API Call out of date?
 
