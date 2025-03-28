@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "pyov2>=1.0.1",
+# ]
+# ///
 #
 # speedcams.py
 # 

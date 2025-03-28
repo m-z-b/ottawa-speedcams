@@ -51,5 +51,6 @@ The API URL in the Python script can be obtained as follows.
  2. Click on *I want to use this...* then *View API Resources*
  3. Copy the GeoJSON API call: [https://services.arcgis.com/G6F8XLCl5KtAlZ2G/arcgis/rest/services/Automated_Speed_Enforcement_Camera_Locations/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson](API Call)
  4. Update the `speedcams.py` `API_URL` value in `speedcams.py`.
- 5. Submit a pull request for the updated URL and the updated data.
+ 5. in the project directory, run (using uv - recommended) `uv run speedcams.py` 
+ 6. Submit a pull request for the updated URL and the updated data.
 
