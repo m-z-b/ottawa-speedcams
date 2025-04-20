@@ -1,0 +1,23 @@
+version = 1
+revision = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "pyov2"
+version = "1.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/85/602fa61e87173590fd1d0cb933a05b603749fe8ad87748c3cc171965c7f0/pyov2-1.0.1.tar.gz", hash = "sha256:58f3227969569810b30b433d839912ae25b11088ef4ca201ac34fdda8e68eb7b", size = 4681 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1f/53/7fbefa97d5a6cf68a24107197591c7c78b672ea33bbd64a86f87ec6aa3ab/pyov2-1.0.1-py3-none-any.whl", hash = "sha256:ef934e50a8f4f6e5838f59bc8fa7594a77d9ba254a1d6fd34f1b42cdcd82f239", size = 5012 },
+]
+
+[[package]]
+name = "speedcams"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pyov2" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pyov2", specifier = ">=1.0.1" }]
