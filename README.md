@@ -1,6 +1,8 @@
 # Speed Cameras of Ottawa
 
-Got a TomTom and want to be warned about Ottawa Speed Cameras?
+Want to be warned when you are approaching one of the new Ottawa Speed Cameras?
+
+## TomTom Users
 
 Grab the `Speed_Cameras.ov2` and `Speed_Cameras.bmp` files from this 
 repository.
@@ -13,14 +15,41 @@ repository.
   5. Choose how near you have to approach the Camera
      to get a warning, and what the appropriate warning should be.
 
+## Garmin Users
+
+Grab the `Speed_Cameras.csv` from this repository.
+
+  1. Download and install the **POILoader** software from the Garmin website. 
+  2. Connect your Garmin device to your computer.
+  3. Run the POI Loader program and follow its instructions.
+  4. Select the folder containing the `Speed_Cameras.csv` file.
+  5. Select the option to _Install new custom POIs onto your device_.
+  6. **Select _Manual_ mode, not _Express_ mode.**
+  7. Set the option to warn when within (say) 150m of a POI - if you need a greater
+  distance you're driving much too fast.
+  8. Upload to the GPS. Restart the device. 
+  9. If you browse the Points of Interest Categories, you should find the speed cameras under__Custom POIs_.
+
+
+## Other Device Users
+
+There is probably a way of importing the `Speed_Cameras.csv` file. 
+If you're a developer, issue a pull request to:
+ - Update the instructions in this document
+ - Modify the `speedcams.py` file to generate another format.
+
+
+# Developer?
+
 ## Files not up-to-date and know a little Python?
 
   1. Clone this repo and cd into the repo directory.
-  2. Install the `pyov2` package.
-  3. Run `python speedcams.py` to generate an updated `Speed_Cameras.ov2` file   
-  4. If you know what you're doing, Issue a pull request 
-  5. If you're not quite sure, create an issue requesting an update.
-  6. API call not working - see below.
+  2. Experienced pythonista? `uv run speedcams.py` should update the files.
+  3. No `uv`? Install the `pyov2` package.
+  4. Run `python speedcams.py` to generate an updated `Speed_Cameras.ov2` file   
+  5. If you know what you're doing, Issue a pull request 
+  6. If you're not quite sure, create an issue requesting an update.
+  7. API call not working - see below.
 
 ## If you have graphic design abilities...
 
@@ -31,10 +60,6 @@ a bit like a red camera would be much better.
 
 Don't use any clever bitmap formats - they won't work on all devices.
 
-## Got a Garmin or another make?
-
- 1. Update `speedcams.py` to generate the correct CSV or other format files. 
- 2. Submit a pull request.
 
 ## License
 

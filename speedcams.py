@@ -36,9 +36,11 @@ def get_json(url):
         data = json.loads(url.read().decode())
         return data 
 
-def generate_files( data: str, ov2_path: Path ):
+def generate_files( data: str, ov2_path: Path, garmin_csv_path: Path ):
   if not ov2_path.endswith('.ov2'):
       ov2_path += '.ov2'
+  if not garmin_csv_path.endswith('.csv'):
+      garmin_csv_path += '.csv'
 
   # TomTom devices
   with open(ov2_path, 'wb') as target_file: 
@@ -50,9 +52,19 @@ def generate_files( data: str, ov2_path: Path ):
           target_file.write(buff)
   print(f"Wrote {len(data['features'])} camera locations to {ov2_path}")
 
+  # Garmin devices (CSV format)
+  with open(garmin_csv_path, 'w') as target_file:
+      for feature in data['features']:
+          longitude = feature['properties']['Longitude']
+          latitude = feature['properties']['Latitude']
+          label = feature['properties']['ID']
+          # Garmin CSV format: Longitude,Latitude,Name,Comment (optional)
+          target_file.write(f"{longitude},{latitude},Camera {label},Speed Camera\n")
+  print(f"Wrote {len(data['features'])} camera locations to {garmin_csv_path}")
+
 def main():
     data = get_json(API_URL)
-    generate_files(data, 'Speed_Cameras.ov2')# G
+    generate_files(data, 'Speed_Cameras.ov2', 'Speed_Cameras.csv')
 
 
 if __name__ == '__main__':
